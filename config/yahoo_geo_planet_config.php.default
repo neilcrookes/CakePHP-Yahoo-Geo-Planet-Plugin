@@ -1,0 +1,22 @@
+<?php
+/**
+ * Configuration options for Yahoo GeoPlanet Datasource.
+ *
+ * Copy the $yahooGeoPlanet property to app/config/database.php and register
+ * your application [http://developer.yahoo.com/wsregapp/] then add your app id
+ * to the config.
+ *
+ * @author Neil Crookes <neil@neilcrookes.com>
+ * @link http://www.neilcrookes.com
+ * @copyright (c) 2010 Neil Crookes
+ * @license MIT License - http://www.opensource.org/licenses/mit-license.php
+ */
+class YAHOO_GEO_PLANET_CONFIG {
+
+  var $yahooGeoPlanet = array(
+    'datasource' => 'YahooGeoPlanet.YahooGeoPlanet',
+    'appid' => '',
+  );
+
+}
+?>
