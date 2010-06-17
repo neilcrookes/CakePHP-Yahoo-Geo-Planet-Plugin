@@ -18,7 +18,7 @@ Installation
   - Get the <a href="http://github.com/neilcrookes/CakePHP-ReST-DataSource-Plugin">CakePHP Rest DataSource Plugin</a> and add to plugins/rest
   - Get this plugin and add it to plugins/yahoo_geo_planet
   - Get a Yahoo Developer <a href="http://developer.yahoo.com/wsregapp/">Application Id</a>
-  - Copy the $yahooGeoPlanet property from plugins/yah00_geo_planet/config/yahoo_geo_planet_config.php.default to you app/config/database.php file and add in your application id
+  - Copy the $yahooGeoPlanet property from plugins/yahoo_geo_planet/config/yahoo_geo_planet_config.php.default to you app/config/database.php file and add in your application id
   - Test by pointing your browser to 'http://your-host-name/yahoo_geo_planet/yahoo_geo_planet_places/places' and enter a place name
 
 Usage
@@ -77,77 +77,73 @@ Results
 Results from the API calls look like this:
 
         Array
-        (
-            [woeid] => 2353963
-            [placeTypeName] => Town
-            [placeTypeName attrs] => Array
-                (
-                    [code] => 7
-                )
+            (
+                [woeid] => 35356
+                [placeTypeName] => Town
+                [placeTypeName attrs] => Array
+                    (
+                        [code] => 7
+                    )
 
-            [name] => Alton
-            [country] => United States
-            [country attrs] => Array
-                (
-                    [type] => Country
-                    [code] => US
-                )
+                [name] => Southampton
+                [country] => United Kingdom
+                [country attrs] => Array
+                    (
+                        [type] => Country
+                        [code] => GB
+                    )
 
-            [admin1] => Illinois
-            [admin1 attrs] => Array
-                (
-                    [type] => State
-                    [code] => US-IL
-                )
+                [admin1] => England
+                [admin1 attrs] => Array
+                    (
+                        [type] => Country
+                        [code] => GB-ENG
+                    )
 
-            [admin2] => Madison
-            [admin2 attrs] => Array
-                (
-                    [type] => County
-                    [code] =>
-                )
+                [admin2] => Hampshire
+                [admin2 attrs] => Array
+                    (
+                        [type] => County
+                        [code] => GB-HAM
+                    )
 
-            [admin3] =>
-            [locality1] => Alton
-            [locality1 attrs] => Array
-                (
-                    [type] => Town
-                )
+                [admin3] =>
+                [locality1] => Southampton
+                [locality1 attrs] => Array
+                    (
+                        [type] => Town
+                    )
 
-            [locality2] =>
-            [postal] => 62002
-            [postal attrs] => Array
-                (
-                    [type] => Zip Code
-                )
+                [locality2] =>
+                [postal] =>
+                [centroid] => Array
+                    (
+                        [latitude] => 50.909939
+                        [longitude] => -1.40732
+                    )
 
-            [centroid] => Array
-                (
-                    [latitude] => 38.890862
-                    [longitude] => -90.18383
-                )
+                [boundingBox] => Array
+                    (
+                        [southWest] => Array
+                            (
+                                [latitude] => 50.879452
+                                [longitude] => -1.48125
+                            )
 
-            [boundingBox] => Array
-                (
-                    [southWest] => Array
-                        (
-                            [latitude] => 38.861118
-                            [longitude] => -90.221977
-                        )
+                        [northEast] => Array
+                            (
+                                [latitude] => 50.973251
+                                [longitude] => -1.31432
+                            )
 
-                    [northEast] => Array
-                        (
-                            [latitude] => 38.932919
-                            [longitude] => -90.088242
-                        )
+                    )
 
-                )
+                [areaRank] => 5
+                [popRank] => 11
+                [uri] => http://where.yahooapis.com/v1/place/35356
+                [lang] => en-US
+            )
 
-            [areaRank] => 4
-            [popRank] => 9
-            [uri] => http://where.yahooapis.com/v1/place/2353963
-            [lang] => en-US
-        )
 
 To do
 -----
