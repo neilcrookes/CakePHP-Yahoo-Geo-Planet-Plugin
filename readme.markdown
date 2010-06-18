@@ -32,6 +32,8 @@ Include the YahooGeoPlanet.YahooGeoPlanetPlace model in you Controller::uses pro
           'conditions' => array(
             'q' => 'Southampton'
           ),
+          'page' => 1,
+          'limit' => 10,
         ));
 
   - Retrieving places matching a given search term of a given type:
@@ -71,6 +73,8 @@ Include the YahooGeoPlanet.YahooGeoPlanetPlace model in you Controller::uses pro
             'woeid' => 2488042
           ),
         ));
+
+  - See the YahooGeoPlanetPlacesController::places() method for example of how to paginate a result set
 
 Results
 -------
