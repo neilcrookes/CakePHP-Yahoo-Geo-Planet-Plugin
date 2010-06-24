@@ -1,7 +1,7 @@
 <?php
 
 // Import the rest data source from the rest plugin
-App::import('Datasouce', 'Rest.RestSource');
+App::import('Datasource', 'Rest.RestSource');
 
 /**
  * CakePHP DataSource for accessing the Yahoo GeoPlanet API.
